@@ -144,3 +144,4 @@ formeditor.js
 scripts.js
 flot.js
 click.js
+app.js
