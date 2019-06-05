@@ -145,3 +145,5 @@ scripts.js
 flot.js
 click.js
 app.js
+ajaxfileupload/ajaxfileupload.js
+ajaxfileupload.js
