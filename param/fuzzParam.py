@@ -15,8 +15,9 @@ lenUrl = {}
 
 
 class fuzz():
-    def __init__(self, target, lenUrl, timeOut):
+    def __init__(self, target, lenUrl, timeOut,  targetList):
         self.target = target
+        self.targetList = targetList
         self.start(lenUrl, timeOut)
 
     def start(self, lenUrl, timeOut=10):
@@ -31,11 +32,12 @@ class fuzz():
                 urlData = requests.post(url=self.target['url'], data=self.target['data'], timeout=timeOut)
             if urlData.status_code == 200:
                 if len(urlData.text) != lenUrl['normalUrl'] and len(urlData.text) != lenUrl['url404'] and len(urlData.text) != lenUrl['homeUrl'] and len(urlData.text) != lenUrl['postUrl']:
-                    print len(urlData.text),lenUrl['normalUrl'],lenUrl['url404'],lenUrl['homeUrl'],lenUrl['postUrl']
                     with open('fuzz.txt', mode='a') as filename:
                         filename.write('url : {} , method : {} , data : {}'.format(self.target['url'], self.target['method'], self.target['data']))
                         filename.write('\n')
                     return True
+            elif urlData.status_code == 503:
+                self.targetList.put(self.target)
         except Exception, e:
             print e
             pass
@@ -107,7 +109,7 @@ if __name__ == '__main__':
             while True:
                 if int(thread._count()) < threadCount:
                     thread.start_new_thread(
-                        fuzz, (target, lenUrl, timeOut))
+                        fuzz, (target, lenUrl, timeOut, targetList))
                     break
                 else:
                     time.sleep(2)
