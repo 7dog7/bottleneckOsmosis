@@ -1,0 +1,43 @@
+{
+	"manifest_version": 2,
+	"name": "ScanAnnotation",
+	"version": "1.0.0",
+	"description": "__MSG_pluginDesc__",
+	"icons":
+	{
+		"16": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+	},
+	"browser_action": 
+	{
+		"default_icon": "img/icon.png",
+		"default_title": "查看所有资源的注释",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["<all_urls>"],
+			"js": ["js/jquery-1.8.3.js", "js/content-script.js"],
+			"css": ["css/custom.css"],
+			"run_at": "document_start"
+		}
+	],
+	"permissions":
+	[
+		"contextMenus",
+		"tabs",
+		"notifications",
+		"webRequest",
+		"webRequestBlocking",
+		"storage",
+		"http://*/*",
+		"https://*/*"
+	],
+	"web_accessible_resources": ["js/inject.js"],
+	"homepage_url": "https://github.com/7dog7/bottleneckOsmosis/ScanAnnotation",
+	"omnibox": { "keyword" : "js" },
+	"default_locale": "zh_CN",
+	"devtools_page": "devtools.html"
+}

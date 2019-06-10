@@ -1,0 +1,46 @@
+/**
+ * @author  :chenzejiang(email:820289461@qq.com)
+ * @Blog    ://www.chenzejiang.com
+ * @WeChat  :15913929100
+ **/
+ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, hr, pre, form, fieldset, input, textarea, p, blockquoteth, td { margin: 0px; padding: 0px; }
+ h1, h2, h3, h4, h5, h6 { font-size: 12px; font-weight: normal; }
+ ul, ol { list-style: none; }
+ table { border-collapse: collapse; border-spacing: 0; }
+ object, input, textarea { outline: none; }
+ fieldset, img { border: 0; }
+ address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal; }
+ i { font-style: normal; }
+ ol, ul { list-style: none; }
+ capation, th { text-align: left; }
+ h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+ q:before, q:after { content: ''; }
+ abbr, acronym { border: 0; }
+ /* 以下样式根据不同的网站可能需要改写 */
+ html { font-family: Tahoma,"黑体", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; height: 100%; }
+ body { background-color: #fff; /* height: 100%; */ }
+ textarea { font-family: Courier New,sans-serif; font-size: 13px; }
+ audio { width: 0; height: 0; display: none; }
+ i { font-style: normal; }
+ a { text-decoration: none; color: #000;}
+ /*a:visited {color:#000;}*/
+ a:hover { text-decoration: none; }
+ * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+ /*placeholder的设置*/
+ input::-moz-placeholder, textarea::-moz-placeholder { color: #898989; }
+ input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #898989; }
+ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #898989; }
+
+ /*如果一个块级对象内部包含浮动对象，应该给该块级对象使用clearfix*/
+ .clearfix:after { content: ''; display: block; height: 0; clear: both; visibility: hidden; }
+ .clearfix { display: inline-block; }
+ *html .clearfix { height: 1%; }
+ .clearfix { display: block; }
+ .va-c { vertical-align: center; }
+ .pr { position: relative; }
+ .pa { position: absolute; }
+ .abs-right { position: absolute; right: 0; }
+ .zoom { zoom: 1; }
+ .hidden { visibility: hidden; }
+ .none { display: none !important; }
+ 
