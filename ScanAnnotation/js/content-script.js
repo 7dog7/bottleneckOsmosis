@@ -1,1 +1,1 @@
-﻿console.log('这是content script!');
+﻿console.log('https://github.com/7dog7/bottleneckOsmosis/tree/master/ScanAnnotation');

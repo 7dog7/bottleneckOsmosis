@@ -36,7 +36,7 @@
 		"https://*/*"
 	],
 	"web_accessible_resources": ["js/inject.js"],
-	"homepage_url": "https://github.com/7dog7/bottleneckOsmosis/ScanAnnotation",
+	"homepage_url": "https://github.com/7dog7/bottleneckOsmosis/tree/master/ScanAnnotation",
 	"omnibox": { "keyword" : "js" },
 	"default_locale": "zh_CN",
 	"devtools_page": "devtools.html"

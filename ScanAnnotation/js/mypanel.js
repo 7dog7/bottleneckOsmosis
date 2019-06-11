@@ -42,7 +42,7 @@ const app = {
 				<div class="file-list-link-box">
 					<a href="javascript:;">${item.url}</a>
 				</div>
-				<pre>${annotationCode}</pre>
+				<pre>${this.htmlEncodeByRegExp(annotationCode)}</pre>
 			</li>
 		`;
 		/* 过滤没注释的文件 */
@@ -50,6 +50,17 @@ const app = {
 			$("#file-list").append(appendStr);
 		}
 	},
+    htmlEncodeByRegExp:function (str){
+        var s = "";
+        if(str.length == 0) return "";
+        s = str.replace(/&/g,"&amp;");
+        s = s.replace(/</g,"&lt;");
+        s = s.replace(/>/g,"&gt;");
+        s = s.replace(/ /g,"&nbsp;");
+        s = s.replace(/\'/g,"&#39;");
+        s = s.replace(/\"/g,"&quot;");
+        return s;
+    },
 	/**
 	 * 绑定DOM事件
 	 */
