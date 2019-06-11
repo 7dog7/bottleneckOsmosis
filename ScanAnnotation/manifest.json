@@ -5,9 +5,9 @@
 	"description": "__MSG_pluginDesc__",
 	"icons":
 	{
-		"16": "img/icon.png",
-		"48": "img/icon.png",
-		"128": "img/icon.png"
+		"16": "img/logo.png",
+		"48": "img/logo@3x.png",
+		"128": "img/logo@8x.png"
 	},
 	"browser_action": 
 	{
