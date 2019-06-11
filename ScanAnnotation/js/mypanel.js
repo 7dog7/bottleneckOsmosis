@@ -24,7 +24,7 @@ const app = {
 	getResourcesAnnotationCode(_content) {
 		/* 匹配多行注释与单行注释与html注释*/
 		const reg = /<!--[^\!\[]*?(?<!\/\/)-->|\/\/.*(?:\r|\n|$)|(?:^|\n|\r)\s*\/\*[\s\S]*?\*\/\s*(?:\r|\n|$)/mg;
-		const regArr = _content.match(reg)
+		const regArr = _content.match(reg);
 		return regArr === null ? '' : regArr.join('');
 	},
 	/**
@@ -118,6 +118,7 @@ const app = {
 		this.getResources();
 	}
 };
+
 $(function(){
     chrome.tabs.onUpdated.addListener(function(tabId,changeInfo,tab) {
         if(changeInfo.status === "complete"){
@@ -129,16 +130,3 @@ $(function(){
 
 });
 
-// var myconsole = 
-// {
-// 	_log: function(obj)
-// 	{
-// 		// 不知为何，这种方式不行
-// 		chrome.devtools.inspectedWindow('console.log('+JSON.stringify(obj)+')');
-// 	},
-// 	log: function(obj)
-// 	{
-// 		// 这里有待完善
-// 		chrome.tabs.executeScript(chrome.devtools.inspectedWindow.tabId, {code: 'console.log(' + JSON.stringify(obj) + ')'}, function(){});
-// 	}
-// };
