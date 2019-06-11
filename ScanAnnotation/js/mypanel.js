@@ -117,9 +117,16 @@ const app = {
 		this.bindDomEvent();
 		this.getResources();
 	}
-}
+};
 $(function(){
-	app.init();
+    chrome.tabs.onUpdated.addListener(function(tabId,changeInfo,tab) {
+        if(changeInfo.status === "complete"){
+            $("#file-list").html('');
+            app.init();
+        }
+    });
+    app.init();
+
 });
 
 // var myconsole = 
