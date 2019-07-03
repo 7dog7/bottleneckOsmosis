@@ -147,3 +147,4 @@ click.js
 app.js
 ajaxfileupload/ajaxfileupload.js
 ajaxfileupload.js
+jsConfig.js
