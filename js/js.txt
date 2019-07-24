@@ -249,3 +249,4 @@ text.js
 datas.js
 a_base.js
 base.js
+domain.js
