@@ -239,3 +239,13 @@ ftp.js
 site.js
 soft.js
 map.js
+details.js
+basic.js
+login_menu.js
+login_txt.js
+base_login.js
+bf_config.js
+text.js
+datas.js
+a_base.js
+base.js
