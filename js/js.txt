@@ -262,3 +262,4 @@ logger.js
 storage.js
 localStorage.js
 user_info.js
+process.js
