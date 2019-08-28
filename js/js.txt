@@ -263,3 +263,13 @@ storage.js
 localStorage.js
 user_info.js
 process.js
+userinfo.js
+util.js
+FileUploadField.js
+GridSummary.js
+score.js
+mt_validation.js
+copy_paste.js
+grid.js
+theme.js
+form.comment.js
