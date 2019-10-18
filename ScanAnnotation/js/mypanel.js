@@ -31,7 +31,7 @@ const app = {
 	 * 渲染Dom
 	 */
 	appendResourcesDom(item) {
-		/* 单文件所有注释 */
+		/* 单文件所有注释 */
 		const annotationCode = this.getResourcesAnnotationCode(item.content);
 
 		/* 注释语言 */
