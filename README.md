@@ -26,3 +26,4 @@
 > 正在研究
 > 参考资料:https://github.com/GerbenJavado/LinkFinder （基本是同个功能还有谷歌插件）  
 > 参考资料:https://github.com/p1g3/JSINFO-SCAN （递归式寻找域名和api）
+> 近期发现Vue.js devtools,Augury,React Developer Tools,如没有进行混淆，可以直接使用获取路由  
