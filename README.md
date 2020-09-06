@@ -17,8 +17,7 @@
 
 使用技巧:
 >谷歌浏览器，进入扩展程序开启开发者模式，选择加载已解压的扩展程序  
->谷歌应用商店: https://chrome.google.com/webstore/detail/scanannotation/gejiegnodfccfhagbeaopeffcdbcgfef?hl=zh-CN (切换
-工具前言:账户上架谷歌平台)
+>谷歌应用商店: https://chrome.google.com/webstore/detail/scanannotation/gejiegnodfccfhagbeaopeffcdbcgfef?hl=zh-CN (切换账户上架谷歌平台)
 
 >通过注释可以发现一些利用的内容，有的程序员喜欢写上这个是什么功能,你就可以猜出后台或者隐藏的功能，有的还会贴上后台地址啥，配置文件内网域名各种吧。ctf也可以辅助一下哦！
 
@@ -27,3 +26,4 @@
 > 参考资料:https://github.com/GerbenJavado/LinkFinder （基本是同个功能还有谷歌插件）  
 > 参考资料:https://github.com/p1g3/JSINFO-SCAN （递归式寻找域名和api）  
 > 近期发现Vue.js devtools,Augury,React Developer Tools等谷歌插件,如js代码没有进行变态处理，可以直接使用获取路由  
+  
